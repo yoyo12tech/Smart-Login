@@ -37,7 +37,7 @@ logBtn.addEventListener("click",function (){
     }
     else if(!user){
         errorIcon.style.display="block";
-        error.textContent="Email or Password does not exist!"
+        error.textContent="Incorrect email or password!"
         error.style.display="block";
     }
     else{
