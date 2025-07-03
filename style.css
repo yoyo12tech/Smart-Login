@@ -1,0 +1,150 @@
+*{
+    box-sizing: border-box;
+    margin: 0;padding: 0;
+    
+}
+::selection{
+    background-color: rgb(255, 0, 251);
+    color: white;
+}
+body{
+    height: 100dvh;
+    width:100%;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-size: 150% 150%;
+    display: flex;justify-content: center;align-items: center;
+    background: linear-gradient(130deg,cyan,rgb(255, 0, 225));
+    background-position: 50% 50%;
+    background-size: 150% 150%;
+    animation: move-bg 5s ease-in-out alternate infinite;
+
+}
+@keyframes move-bg{
+    0%{
+        background-position: 50% 0%;
+    }
+    50%{
+        background-position: 100% 100%;
+    }
+    100%{
+        background-position: 50% 0%;
+    }
+}
+a{
+    background: linear-gradient(to right,rgb(0, 215, 253),rgb(190, 120, 255),rgb(255, 0, 195));
+    background-clip: text;
+    color: transparent;
+    transition: 0.3s ease-in-out;
+}
+a:hover{
+    color: rgb(72, 200, 255);
+}
+form{
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;align-items: center;
+    box-shadow: 0px 0px 20px rgba(81, 81, 81, 0.692);
+    color: black;
+    padding: 2rem;
+    border-radius: 4px;
+    width: min(22rem,70%);
+}
+form>h1{
+    font-family: "Italiana", sans-serif;
+    font-size: 2.7rem;
+    font-weight: 900;
+    color: rgb(55, 55, 55);
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+form>input{
+    background: linear-gradient(130deg,rgba(0, 215, 253, 0.09),rgba(190, 120, 255, 0.09),rgba(255, 0, 195, 0.09));
+    background-color:rgb(249, 249, 249);
+    color: rgb(55, 55, 55);;
+    padding: 0.9rem 1rem;
+    font-size: 16.5px;
+    border: none;
+    width: 100%;
+    margin-bottom: 1.2rem;
+    border-radius: 0.4rem;
+    transition: 0.3s ease-in-out;
+
+}
+form>input::placeholder{
+    border: none;
+    color: rgb(55, 55, 55);;
+
+}
+form>input:focus{
+    border: none;
+    outline: none;
+    box-shadow: -2px -2px 15px rgb(255, 153, 248), 2px 2px 15px rgb(101, 255, 255);
+
+
+}
+form>button{
+    margin: 1rem;margin-bottom: 1.5rem;
+    background: linear-gradient(to right,rgb(113, 234, 255),rgb(195, 132, 255),rgb(255, 131, 226));
+    background-color: cyan;
+    padding: 0.5rem 1.8rem;
+    font-size: 1rem;
+    border: 0rem;outline: none;
+    border-radius:1rem ;
+    font-weight: bold;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+form>button:hover{
+    box-shadow: 2px 2px 10px rgb(255, 137, 255);;
+}
+p{
+    background: linear-gradient(to right,rgb(0, 215, 253),rgb(190, 120, 255),rgb(255, 0, 195));
+    background-clip: text;
+    color:rgb(55, 55, 55);
+    margin-bottom: 1rem;
+}
+
+#success,#error,#error-email,#error-pass,#error-icon,#success-icon{
+    display: none;
+}
+
+#home-body{
+    margin:0;
+    display: block;
+    color: rgb(255, 255, 255);
+    overflow: hidden;
+    background: url(./pics/bg3.jpg);
+}
+
+header{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    justify-content: space-around;
+    align-items: center;
+    color: rgb(255, 3, 255);
+    padding: 1rem;
+}
+#log-out {
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    background-color: rgb(246, 69, 255);
+    color: cyan;
+    font-weight: 900;
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+#log-out:hover {
+    background-color: cyan;
+    color:rgb(246, 69, 255); ;
+}
+#welcome{
+    text-align: center;
+    margin-top: 33dvh;
+    font-size: 5rem;
+    filter: drop-shadow(0px 0px 20px rgb(255, 255, 255));
+    color: cyan;
+}
+

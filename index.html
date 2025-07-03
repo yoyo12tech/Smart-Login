@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./pics/icons8-login-64.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Smart Login</title>
+</head>
+<body>
+    
+    <form>
+        <h1>Smart Login</h1>
+        <input id="reg-name" placeholder="Your Name">
+        <input id="reg-email"  placeholder="Your Email">
+        <input id="reg-pass"  type="password"   placeholder="Your password">
+        <i id="success-icon" class="fa-solid fa-arrows-rotate fa-spin-pulse" style="color: #13c33f;margin-bottom: 5px;"></i>
+        <i id="error-icon" class="fa-solid fa-circle-exclamation fa-fade" style="color: #e60532; margin-bottom: 5px;"></i>
+        <p id="success" style="margin: 0px;color: rgb(0, 168, 22);">Success!</p>
+        <p id="error" style="margin: 0px;color: rgb(255, 0, 0);">All inputs are required!</p>
+        <p id="error-email"style="margin: 0px;color: rgb(255, 0, 0);">Enter a valid Email!</p>
+        <p id="error-pass"style="margin: 0px;color: rgb(255, 0, 0);">Password must be atleast 6 characters.</p>
+        <button id="reg-btn" type="button">Sign In</button>
+        <p>You have an account? <a href="./login.html">Sign In</a></p>
+    </form>
+
+
+
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
