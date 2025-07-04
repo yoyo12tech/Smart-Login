@@ -10,7 +10,6 @@
 body{
     height: 100dvh;
     width:100%;
-    overflow: hidden;
     background-position: 50% 50%;
     background-size: 150% 150%;
     display: flex;justify-content: center;align-items: center;
