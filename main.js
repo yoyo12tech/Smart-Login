@@ -84,9 +84,9 @@ regBtn.addEventListener("click", function() {
     }
     else{
         new_user={
-            name:regName.value,
-            email:regEmail.value,
-            password:regPass.value,
+            name:regName.value.toLowerCase(),
+            email:regEmail.value.toLowerCase(),
+            password:regPass.value.toLowerCase(),
         }
         users.push(new_user);
         localStorage.setItem("users",JSON.stringify(users));
