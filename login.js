@@ -14,7 +14,7 @@ let users = stored ? JSON.parse(stored) : [];
 //function userExist
 function userExists(email,password){
     for(let i = 0;i<users.length;i++){
-        if(users[i].email==email && users[i].password==password ){
+        if(users[i].email.toLowerCase()==email.toLowerCase() && users[i].password.toLowerCase()==password.toLowerCase() ){
             return users[i];
         }
     }

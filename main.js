@@ -40,7 +40,7 @@ function passRegex(pass){
 //function userExist
 function userExists(email,password){
     for(let i = 0;i<users.length;i++){
-        if(users[i].email==email){
+        if(users[i].email.toLowerCase()==email.toLowerCase()){
             return users[i];
         }
     }
